@@ -1,5 +1,6 @@
 const config = {
-  plugins: ["@tailwindcss/postcss"],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: ["@tailwindcss/postcss", require("@tailwindcss/typography")],
 };
 
 export default config;
