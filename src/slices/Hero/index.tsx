@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { title } from "process";
 import { Bounded } from "@/components/Bounded";
-import Shapes from "./Shapes";
+import { Shapes } from "./Shapes";
 
 /**
  * Props for `Hero`.
