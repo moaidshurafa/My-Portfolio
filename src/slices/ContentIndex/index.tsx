@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Content, isFilled } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import {Bounded} from "@/components/Bounded";
+import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 import ContentList from "./ContentList";
 import { createClient } from "@/prismicio";
@@ -40,7 +40,7 @@ const ContentIndex: FC<ContentIndexProps> = async ({ slice }) => {
         items={items}
         contentType={contentType}
         viewMoreText={slice.primary.view_more_text}
-        fallBackItemImage={slice.primary.fallback_item_image}
+        fallbackItemImage={slice.primary.fallback_item_image}
       />
     </Bounded>
   );

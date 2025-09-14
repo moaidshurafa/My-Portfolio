@@ -2,7 +2,7 @@ import { SliceZone } from "@prismicio/react";
 import { Content } from "@prismicio/client";
 import { components } from "@/slices";
 import Heading from "@/components/Heading";
-import { Bounded } from "./Bounded";
+import Bounded from "./Bounded";
 
 export default function ContentBody({
   page,

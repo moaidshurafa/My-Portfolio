@@ -20,7 +20,7 @@ type ContentListProps = {
 export default function ContentList({
   items,
   contentType,
-  fallBackItemImage,
+  fallbackItemImage,
   viewMoreText = "Read More",
 }: ContentListProps) {
   const revealRef = useRef(null);
@@ -99,7 +99,7 @@ export default function ContentList({
   const contentImages = items.map((item) => {
     const image = isFilled.image(item.data.hover_image)
       ? item.data.hover_image
-      : fallBackItemImage;
+      : fallbackItemImage;
     return asImageSrc(image, {
       fit: "crop",
       w: 220,

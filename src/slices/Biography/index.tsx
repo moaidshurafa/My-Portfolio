@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import {Bounded} from "@/components/Bounded";
+import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 import Button from "@/components/Button";
 import Avatar from "@/components/Avatar";
