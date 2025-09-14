@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prefer-const */
 "use client";
 
@@ -28,7 +29,7 @@ export default function Avatar({ image, className }: AvatarProps) {
           opacity: 1,
           duration: 1.3,
           ease: "power3.inOut",
-        }
+        },
       );
 
       window.onmousemove = (e) => {
@@ -54,7 +55,7 @@ export default function Avatar({ image, className }: AvatarProps) {
               rotation: gsap.utils.clamp(-2, 2, 5 * componentPercent.x),
               duration: 0.5,
             },
-            0
+            0,
           )
           .to(
             ".highlight",
@@ -63,7 +64,7 @@ export default function Avatar({ image, className }: AvatarProps) {
               x: -10 + 20 * componentPercent.x,
               duration: 0.5,
             },
-            0
+            0,
           );
       };
     }, component);
@@ -76,7 +77,7 @@ export default function Avatar({ image, className }: AvatarProps) {
           field={image}
           className="avatar-image h-full w-full object-fill"
           imgixParams={{ q: 90 }}
-          alt=".."
+          alt=""
         />
         <div className="highlight absolute inset-0 hidden w-full scale-110 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0 md:block"></div>
       </div>

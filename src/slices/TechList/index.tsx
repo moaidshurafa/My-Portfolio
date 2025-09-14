@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 "use client";
 
 import { Content } from "@prismicio/client";
@@ -6,8 +7,7 @@ import React, { JSX, useLayoutEffect, useRef } from "react";
 import { MdCircle } from "react-icons/md";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-import { Bounded } from "@/components/Bounded";
+import {Bounded} from "@/components/Bounded";
 import Heading from "@/components/Heading";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -51,7 +51,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
               : gsap.utils.random(600, 400);
           },
           ease: "power1.inOut",
-        }
+        },
       );
     }, component);
     return () => ctx.revert(); // cleanup!
@@ -80,7 +80,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
             <React.Fragment key={index}>
               <span
                 className={
-                  "tech-item text-8xl font-extrabold uppercase tracking-tighter"
+                  "tech-item text-8xl font-extrabold tracking-tighter uppercase"
                 }
                 style={{
                   color: index === 7 && tech_color ? tech_color : "inherit",

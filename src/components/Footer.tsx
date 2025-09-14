@@ -3,7 +3,7 @@ import React from "react";
 import { createClient } from "@/prismicio";
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
-import { Bounded } from "./Bounded";
+import {Bounded} from "./Bounded";
 import { isFilled } from "@prismicio/client";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa6";
 

@@ -7,7 +7,7 @@ type BoundedProps = {
   children: React.ReactNode;
 };
 
-const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(
+const Bounded = React.forwardRef<HTMLElement, BoundedProps>(
   ({ as: Comp = "section", className, children, ...restProps }, ref) => {
     return (
       <Comp
@@ -18,7 +18,7 @@ const Bounded = React.forwardRef<HTMLDivElement, BoundedProps>(
         <div className="mx-auto w-full max-w-7xl">{children}</div>
       </Comp>
     );
-  }
+  },
 );
 
 Bounded.displayName = "Bounded";

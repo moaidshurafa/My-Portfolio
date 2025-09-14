@@ -6,7 +6,7 @@ import { SliceComponentProps } from "@prismicio/react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { title } from "process";
-import { Bounded } from "@/components/Bounded";
+import {Bounded} from "@/components/Bounded";
 import { Shapes } from "./Shapes";
 
 /**
