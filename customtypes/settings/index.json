@@ -58,10 +58,10 @@
           "placeholder": ""
         }
       },
-      "x_link": {
+      "youtube_link": {
         "type": "Link",
         "config": {
-          "label": "X Link",
+          "label": "YouTube Link",
           "placeholder": "",
           "select": null,
           "allowTargetBlank": true,

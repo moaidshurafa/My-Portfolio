@@ -475,15 +475,21 @@ interface SettingsDocumentData {
   cta_label: prismic.KeyTextField;
 
   /**
-   * X Link field in *settings*
+   * YouTube Link field in *settings*
    *
    * - **Field Type**: Link
    * - **Placeholder**: *None*
-   * - **API ID Path**: settings.x_link
+   * - **API ID Path**: settings.youtube_link
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/fields/link
    */
-  x_link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>;
+  youtube_link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >;
 
   /**
    * Github Link field in *settings*
